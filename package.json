@@ -1,0 +1,51 @@
+{
+  "name": "globodai-mcp-teamleader",
+  "version": "1.0.0",
+  "description": "MCP server for Teamleader Focus CRM - manage contacts, companies, deals, tasks, events, and invoices",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "mcp-teamleader": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "teamleader",
+    "crm",
+    "model-context-protocol",
+    "ai",
+    "claude",
+    "globodai"
+  ],
+  "author": "Globodai <contact@globodai.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/globodai-group/mcp-teamleader.git"
+  },
+  "homepage": "https://github.com/globodai-group/mcp-teamleader#readme",
+  "bugs": {
+    "url": "https://github.com/globodai-group/mcp-teamleader/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
